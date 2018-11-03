@@ -85,7 +85,7 @@ public function have_items()
     public function have($itemId)
     {
         // 既に Have しているかの確認
-        $exist = $this->is_wanting($itemId);
+        $exist = $this->is_having($itemId);
 
         if ($exist) {
             // 既に Have していれば何もしない
@@ -100,7 +100,7 @@ public function have_items()
     public function dont_have($itemId)
     {
         // 既に Haveしているかの確認
-        $exist = $this->is_wanting($itemId);
+        $exist = $this->is_having($itemId);
 
         if ($exist) {
             // 既に Haveしていれば Want を外す
